@@ -294,6 +294,7 @@ body{
     width: 30px;
     text-align: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .up:hover{
