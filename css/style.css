@@ -1,0 +1,347 @@
+/* all */
+@font-face {
+    font-family: 'segoeprint';
+    src: url(../fonts/segoeprint.ttf);
+}
+
+@font-face {
+    font-family: 'segoeprint_bold';
+    src: url(../fonts/segoeprint_bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'segoeprint', sans-serif;
+}
+
+body{
+    background-color: rgba(100, 149, 237, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 3px;
+    border: 1px solid transparent;
+}
+
+.link:hover{
+    color:rgba(255, 127, 80, 0.8);
+    transition: 0.3s;
+    border-left: 1px solid rgba(255, 127, 80, 0.8);
+    border-right: 1px solid rgba(255, 127, 80, 0.8);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.logo:hover {
+    border: 1px solid transparent;
+}
+/* header */
+.header__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(100, 149, 237, 0.4);
+    border-radius: 25%;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+    display: flex;
+}
+/* slider */
+.benefits__block{
+    background-color: rgba(100, 149, 237, 0.4);
+    border-radius: 25%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.slide{
+    margin: 15px;
+    width: 520px;
+}
+
+.slider__btn{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.slider__btn:hover{
+    background: transparent;
+    transition: 0.3s;
+    color: rgba(255, 127, 80, 0.8);
+}
+
+.arr__left{
+    left: 255px;
+    top: 35%;
+}
+
+.arr__right{
+    right: 255px;
+    top: 35%;
+}
+
+.d-none{
+    display: none;
+}
+
+/* peculiarities */
+
+.peculiarities__block{
+    background-color: rgba(100, 149, 237, 0.4);
+    border-radius: 25%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.peculiarities__box{
+    margin: 15px;
+    position: relative;
+    margin-top: 25px;
+    padding-top: 15px;
+    display: flex;
+}
+
+.peculiarities__text{
+    max-width: 350px;
+}
+
+.peculiarities__sub-title {
+    position: absolute;
+    top: -25px;
+    left: 50px;
+}
+
+.peculiarities__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.peculiarities__box:nth-child(odd){
+    margin-left: 150px;
+}
+
+.peculiarities__img{
+    width: 220px;
+    height: 220px;
+}
+
+/* filter */
+
+.filter__block{
+    background-color: rgba(100, 149, 237, 0.4);
+    border-radius: 5%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.cards{
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 450px;
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid rgba(255, 127, 80, 0.8);
+    border-radius: 5%;
+}
+
+.card__img {
+    width: 220px;
+    height: 220px;
+}
+
+.card__price{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* consultants */
+
+.consultants__block{
+    background-color: rgba(100, 149, 237, 0.4);
+    border-radius: 5%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* brednds */
+
+.brends__block{
+    background-color: rgba(100, 149, 237, 0.4);
+    border-radius: 25%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.brends__block > .cards > .card {
+    border: none;
+    width: 220px;
+    margin: 25px;
+}
+
+/* information */
+
+.information__block{
+    background-color: rgba(100, 149, 237, 0.4);
+    border-radius: 25%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.information__block > .cards > .card {
+    border: none;
+    width: 220px;
+}
+
+.information__block > .cards > .card > .card__img {
+    border-radius: 5%;
+}
+
+/* company */
+
+.company__block {
+    background-color: rgba(100, 149, 237, 0.4);
+    border-radius: 25%;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.input-btn{
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.input-btn:hover{
+    color:rgba(255, 127, 80, 0.8);
+    transition: 0.3s;
+    border-left: 1px solid rgba(255, 127, 80, 0.8);
+    border-right: 1px solid rgba(255, 127, 80, 0.8);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.up{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.up:hover{
+    color:rgba(255, 127, 80, 0.8);
+    transition: 0.3s;
+    border-left: 1px solid rgba(255, 127, 80, 0.8);
+    border-right: 1px solid rgba(255, 127, 80, 0.8);
+}
+
+/* modal */
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.modal__body{
+    background-color: rgba(100, 149, 237, 1);
+    text-align: center;
+    width: 520px;
+    height: 120px;
+    position: relative;
+    padding-top: 5px;
+}
+
+.close{
+    top: 15px;
+    right: 15px;
+    position: absolute;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.close:hover{
+    color:red;
+    transition: 0.3s;
+    border: 1px solid red;
+}
