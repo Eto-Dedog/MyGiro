@@ -1,15 +1,17 @@
 const sldier = () => {
-    let arrRt = document.querySelector('.arr__right')
-    let arrLt = document.querySelector('.arr__left')
-    let slide = document.querySelectorAll('.slide')
-    arrRt.addEventListener('click', function (e) {
-        e.preventDefault();
-        // if () {
-        // } else if () { 
-        // }
-    });
-    arrLt.addEventListener('click', function (e) {
-        e.preventDefault();
-    });
+let btnRight = document.querySelector(".arr__right");
+let slides = document.querySelectorAll(".slide");
+let i = 0;
+btnRight.addEventListener("click", function () {
+    ++i
+    if (i >= slides.length) {
+        slides[i-1].classList.remove("flex");
+        i = 0;
+        slides[i].classList.add("flex");
+    } else { // Иначе
+        slides[i-1].classList.remove("flex");
+        slides[i].classList.add("flex");
+    }
+})
 }
 export default sldier

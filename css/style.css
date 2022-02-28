@@ -80,7 +80,10 @@ body{
 .slide{
     margin: 15px;
     width: 520px;
+    display: none;
+    height: 252px;
 }
+
 
 .slider__btn{
     display: flex;
@@ -105,6 +108,7 @@ body{
 .arr__left{
     left: 200px;
     top: 35%;
+    display: none;
 }
 
 .arr__right{
@@ -114,6 +118,10 @@ body{
 
 .d-none{
     display: none;
+}
+
+.flex{
+    display: flex;
 }
 
 /* peculiarities */
