@@ -16,7 +16,17 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/scroll */ \"./src/modules/scroll.js\");\n\r\n(0,_modules_scroll__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()\n\n//# sourceURL=webpack://3dglo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/scroll */ \"./src/modules/scroll.js\");\n/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modal */ \"./src/modules/modal.js\");\n\r\n\r\n\r\n(0,_modules_scroll__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()\r\n;(0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\n\n//# sourceURL=webpack://3dglo/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/modal.js":
+/*!******************************!*\
+  !*** ./src/modules/modal.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst modal = () => {\r\n    let btnOpen = document.querySelector('.order')\r\n    let modal = document.querySelector('.modal')\r\n    let btnClose = document.querySelector('.close')\r\n    let sends = document.querySelectorAll('.input-btn')\r\n    btnOpen.addEventListener('click', function () {\r\n        if (modal.style.visibility = \"hidden\") {\r\n            modal.style.visibility = \"visible\"\r\n        } else {\r\n            modal.style.visibility = \"hidden\"\r\n        }\r\n    })\r\n    btnClose.addEventListener('click', function () {\r\n        if (modal.style.visibility = \"visible\") {\r\n            modal.style.visibility = \"hidden\"\r\n        } else {\r\n            modal.style.visibility = \"visible\"\r\n        }\r\n    })\r\n    btnClose.addEventListener('click', function () {\r\n        if (modal.style.visibility = \"visible\") {\r\n            modal.style.visibility = \"hidden\"\r\n        } else {\r\n            modal.style.visibility = \"visible\"\r\n        }\r\n    })\r\n    for (let send of sends) {\r\n        send.addEventListener('click', function (e) {\r\n            e.preventDefault();\r\n            if (modal.style.visibility = \"visible\") {\r\n                modal.style.visibility = \"hidden\"\r\n            } else {\r\n                modal.style.visibility = \"visible\"\r\n            }\r\n        })\r\n    }\r\n}\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modal);\n\n//# sourceURL=webpack://3dglo/./src/modules/modal.js?");
 
 /***/ }),
 
