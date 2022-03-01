@@ -19,14 +19,14 @@ function getTableInfo(data) {
   data.forEach(function(item){
     cards.innerHTML += 
       `
-      <div class="card">
+      <div class="card card__product">
       <img src="${item.фото}" class="card__img" alt="card__img">
       <h4 class="card__name">${item.название}</h4>
-      <span class="card__type">${item.тип}</span>
-      <span class="card__battery">${item.батарея}</span>
-      <span class="card__power">${item.мощность}</span>
-      <span class="card__wheel">${item.колёса}</span>
-      <span class="card__weight">${item.вес}</span>
+      <p class="card__type">${item.тип}</p>
+      <p class="card__battery">${item.батарея}</p>
+      <p class="card__power">${item.мощность}</p>
+      <p class="card__wheel">${item.колёса}</p>
+      <p class="card__weight">${item.вес}</p>
       <p class="card__info">${item.описание}</p>
       </div>
       `
