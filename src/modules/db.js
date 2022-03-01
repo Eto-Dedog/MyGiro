@@ -15,22 +15,65 @@ request.onload = function(e) {
   }
 };
 request.send();
-
 function getTableInfo(data) {
   data.forEach(function(item){
     cards.innerHTML += 
-    `
-    <div class="card card__item">
-    <img src="${item.фото}" class="card__img" alt="card__img">
-    <h4 class="card__name">${item.название}</h4>
-    <span class="card__type">${item.тип}</span>
-    <span class="card__battery">${item.батарея}</span>
-    <span class="card__power">${item.мощность}</span>
-    <span class="card__wheel">${item.колёса}</span>
-    <span class="card__weight">${item.вес}</span>
-    <p class="card__info">${item.описание}</p>
-    </div>
-    `
+      `
+      <div class="card">
+      <img src="${item.фото}" class="card__img" alt="card__img">
+      <h4 class="card__name">${item.название}</h4>
+      <span class="card__type">${item.тип}</span>
+      <span class="card__battery">${item.батарея}</span>
+      <span class="card__power">${item.мощность}</span>
+      <span class="card__wheel">${item.колёса}</span>
+      <span class="card__weight">${item.вес}</span>
+      <p class="card__info">${item.описание}</p>
+      </div>
+      `
+    // `
+    // `
+    // if (item.тип === "гироскутер") {
+    //   `
+    //   <div class="card gyro">
+    //   <img src="${item.фото}" class="card__img" alt="card__img">
+    //   <h4 class="card__name">${item.название}</h4>
+    //   <span class="card__type">${item.тип}</span>
+    //   <span class="card__battery">${item.батарея}</span>
+    //   <span class="card__power">${item.мощность}</span>
+    //   <span class="card__wheel">${item.колёса}</span>
+    //   <span class="card__weight">${item.вес}</span>
+    //   <p class="card__info">${item.описание}</p>
+    //   </div>
+    //   `
+    // } else if (item.тип === "электросамокат") {
+    //   `
+    //   <div class="card samokat">
+    //   <img src="${item.фото}" class="card__img" alt="card__img">
+    //   <h4 class="card__name">${item.название}</h4>
+    //   <span class="card__type">${item.тип}</span>
+    //   <span class="card__battery">${item.батарея}</span>
+    //   <span class="card__power">${item.мощность}</span>
+    //   <span class="card__wheel">${item.колёса}</span>
+    //   <span class="card__weight">${item.вес}</span>
+    //   <p class="card__info">${item.описание}</p>
+    //   </div>
+    //   `
+    // } else if (item.тип === "сегвей") {
+    //   `
+    //   <div class="card segway">
+    //   <img src="${item.фото}" class="card__img" alt="card__img">
+    //   <h4 class="card__name">${item.название}</h4>
+    //   <span class="card__type">${item.тип}</span>
+    //   <span class="card__battery">${item.батарея}</span>
+    //   <span class="card__power">${item.мощность}</span>
+    //   <span class="card__wheel">${item.колёса}</span>
+    //   <span class="card__weight">${item.вес}</span>
+    //   <p class="card__info">${item.описание}</p>
+    //   </div>
+    //   `
+    // }
+    // `
+    // `
     // console.log(item.название);
   })
 }

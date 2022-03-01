@@ -1,5 +1,5 @@
 const filter = () => {
-    let select = document.querySelector('select');
+    let select = document.querySelector('select')
     let cardSams = document.querySelectorAll('.samokat')
     let cardSegs = document.querySelectorAll('.segway')
     let cardGyrs = document.querySelectorAll('.gyro')
